@@ -98,4 +98,9 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
+  collegeDropOut: { image: "images/collectables/College Dropout.png" },
+  lateRegistration: { image: "images/collectables/Late_registration_cd_cover.png" },
+  graduation: { image: "images/collectables/Graduation_(album).png" },
+  andHeartbreak: { image: "images/collectables/51-HCBAsFRL._UF1000,1000_QL80_.png" },
+  MBDTF: { image: "images/collectables/My Beautiful Dark Twisted Fantasy.png" },
 };

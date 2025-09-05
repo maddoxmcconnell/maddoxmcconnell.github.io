@@ -31,22 +31,26 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-      createPlatform(75, 650, 150, 25, "gray");
-      createPlatform(100, 650, 150, 25, "gray");
-      createPlatform(500, 650, 150, 25, "gray");
+      createPlatform(25, 650, 150, 25, "gray");
       createPlatform(300, 650, 150, 25, "gray");
-      createPlatform(300, 650, 150, 25, "gray");
+      createPlatform(500, 550, 150, 25, "gray");
+      createPlatform(725, 450, 150, 25, "gray");
+      createPlatform(500, 425, 150, 25, "gray");
+      createPlatform(600, 300, 150, 25, "gray");
+      createPlatform(875, 300, 150, 25, "gray");
+      createPlatform(1100, 200, 150, 25, "gray");
     // TODO 3 - Create Collectables
-      createCollectable("max", 375, 600, 0.5);
-
-
+      createCollectable("collegeDropOut", 375, 600, 0.5);
+      createCollectable("lateRegistration", 545, 150, .2);
+      createCollectable("graduation", 540, 450, 0.4);
+      createCollectable("andHeartbreak", 667, 200, 0.2);
+      createCollectable("MBDTF", 930, 250, 0.2);
     
     // TODO 4 - Create Cannons
-      createCannon("left", 677, 1);
-      createCannon();
-      createCannon();
-      createCannon();
-      createCannon();
+      createCannon("left", 677, 100);
+      createCannon("right", 400, 1000);
+      createCannon("top", 870, 1000);
+      createCannon("left", 180, 1000);
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
