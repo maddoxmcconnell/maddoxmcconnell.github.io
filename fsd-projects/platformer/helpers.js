@@ -11,7 +11,7 @@ function main() {
   ctx.clearRect(0, 0, 1400, 750); //erase the screen so you can draw everything in it's most current position
 
   if (shouldDrawGrid) {
-    drawGrid();
+    
   }
 
   if (player.deadAndDeathAnimationDone) {

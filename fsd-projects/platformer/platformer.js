@@ -45,7 +45,7 @@ $(function () {
       createCollectable("graduation", 540, 450, 0.4);
       createCollectable("andHeartbreak", 667, 200, 0.2);
       createCollectable("MBDTF", 930, 250, 0.2);
-    
+      createCollectable("youWin", 1150, 150, 0.2);
     // TODO 4 - Create Cannons
       createCannon("left", 677, 100);
       createCannon("right", 400, 1000);

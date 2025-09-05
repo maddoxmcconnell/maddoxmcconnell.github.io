@@ -103,4 +103,5 @@ var collectableList = {
   graduation: { image: "images/collectables/Graduation_(album).png" },
   andHeartbreak: { image: "images/collectables/51-HCBAsFRL._UF1000,1000_QL80_.png" },
   MBDTF: { image: "images/collectables/My Beautiful Dark Twisted Fantasy.png" },
+  youWin: { image: "images/collectables/image.png" },
 };
