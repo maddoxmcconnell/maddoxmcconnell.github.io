@@ -30,6 +30,7 @@ var background = function (window) {
         //////////////////////////////////////////////////////////////////
         // TODO (several):
         var tree;
+        var buildings = [];
       
         // called at the start of game and whenever the page is resized
         // add objects for display in background. draws each image added to the background once
@@ -58,7 +59,14 @@ var background = function (window) {
             }
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
-            
+            for (var i = 0; i < 5; ++i) { // for loop creates buildings
+                var buildingHeight = groundY * Math.random(); // makes the building height
+                var building = draw.rect(75, buildingHeight, "lightGray", "black", 1); // draws a rectangle and width and the whole building
+                building.x = 250 * i; // where the building is on the x axis
+                building.y = groundY - buildingHeight; // keeps the buildings above the ground
+                background.addChild(building); // adds building to the background container
+                buildings.push(building); // pushes the array for the building to be stored
+}
             
             // TODO 3: Part 1 - Add a tree
              tree = draw.bitmap("img/tree.png");// creates bitmap object using the tree image
@@ -78,14 +86,21 @@ var background = function (window) {
             var groundY = ground.y;
             
             // TODO 3: Part 2 - Move the tree!
-            tree.x = tree.x - 1; // moves tree toi the left by subtracting by it's current exposition
+            tree.x = tree.x - 3; // moves tree toi the left by subtracting by it's current exposition
 
             if (tree.x < -200) { // checks if the tree has gone off the left and resets it on the right
                 tree.x = canvasWidth;
             }
             
             // TODO 4: Part 2 - Parallax
-            
+            for (var i = 0; i < buildings.length; i++) { // takes an index from the array and stores it in the variable building
+                var building = buildings[i]; // pulls a building out the buiulding array and puts it in the building array
+                building.x -= 1; // moves it to the left -1
+                if ( building.x < - 200){ // checks if it went off the screen and if so
+                    building.x = canvas.width // it comes back on the right side
+                }
+  // code to do something with each element
+}
 
         } // end of update function - DO NOT DELETE
         
