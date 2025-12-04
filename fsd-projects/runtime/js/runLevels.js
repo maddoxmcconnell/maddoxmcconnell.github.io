@@ -19,19 +19,21 @@ var runLevels = function (window) {
     // TODOs 5 through 11 go here
     // BEGIN EDITING YOUR CODE HERE
     
-    function createObstacle(x, y, damage){
+    function createObstacle(x, y, damage, rotation){
     var hitZoneSize = 25; // how big the hit zone is
     var damageFromObstacle = damage; // how much dmange the saw does
     var obstacleHitZone = game.createObstacle(hitZoneSize, damageFromObstacle); // creates it, stores the damage
     obstacleHitZone.x = x; // saws x position
     obstacleHitZone.y = y; // saws y position
     game.addGameItem(obstacleHitZone); // adds the obstcal to the game
-    var obstacleImage = draw.bitmap("img/sawblade.png"); // draws iut and stores it to obstacle image
+    var obstacleImage = draw.bitmap("img/Spike.png"); // draws it and stores it to obstacle image
     obstacleHitZone.addChild(obstacleImage); // takes the saw blade puicture and adds it as a child to the hit zone
     obstacleImage.x = -25; // the abstical images x
     obstacleImage.y = -25; // the abstical images y
+    obstacleImage.scaleX = 0.05;
+    obstacleImage.scaleY = 0.05;
 
-    obstacleHitZone.rotationalVelocity = 10;
+    obstacleHitZone.rotationalVelocity = rotation;
 
     }
 
@@ -90,8 +92,6 @@ var runLevels = function (window) {
       }
     }
 
-    createEnemy(1500, groundY - 400);
-    createEnemy(1000, groundY - 400);
 
     function createLevelMarker(x, y){
       var levelMarker = game.createGameItem("level", 25); // giving the type reward and giving it a hit zone of 25 and storing it in the reward variable
@@ -109,13 +109,14 @@ var runLevels = function (window) {
       levelMarker.onPlayerCollision = function(){
         game.changeIntegrity(10); // increases player health
         levelMarker.fadeOut();
+        startLevel();
       }
 
       // handles when halle gets the levelMarker
       levelMarker.onProjectileCollision = function(){
         game.increaseScore(200); // incrases the players score when she gets the reward
-        startLevel();
         levelMarker.fadeOut();
+        startLevel();
       }
     }
 
@@ -130,7 +131,13 @@ var runLevels = function (window) {
         var element = levelObjects[i];
 
         if(element.type === "obstacle"){
-          createObstacle(element.x, element.y, element.damage);
+          createObstacle(element.x, element.y, element.damage, element.rotation);
+        }
+        if(element.type === "enemy"){
+          createEnemy(element.x, element.y);
+        }
+        if(element.type === "reward"){
+          createEnemy(element.x, element.y);
         }
 
       }
