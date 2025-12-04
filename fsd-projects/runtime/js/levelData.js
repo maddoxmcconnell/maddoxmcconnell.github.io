@@ -11,20 +11,20 @@ var makeLevelData = function (window) {
     // TODO 12: change the below data
     var levelData = [
       {
-        name: "Robot Romp",
+        name: "Morrowind",
         number: 1,
         speed: -3,
         gameItems: [
-          { type: "obstacle", x: 400, y: groundY - 110, damage: 10, rotation: 0},
-          { type: "obstacle", x: 600, y: groundY - 110, damage: 20, rotation: 0},
-          { type: "obstacle", x: 900, y: groundY - 110, damage: 30, rotation: 0},
+          { type: "obstacle", x: 400, y: groundY - 110, damage: 10, rotation: 0, hitZone: 25, image: "img/mudcrab.png", offsetX: - 30, offsetY: - 25, scaleX: 0.10,  scaleY: 0.10},
+          { type: "obstacle", x: 600, y: groundY - 110, damage: 10, rotation: 0, hitZone: 25, image: "img/mudcrab.png", offsetX: - 25, offsetY: - 25, scaleX: 0.10,  scaleY: 0.10},
+          { type: "obstacle", x: 900, y: groundY - 110, damage: 10, rotation: 0, hitZone: 25, image: "img/mudcrab.png", offsetX: - 25, offsetY: - 25, scaleX: 0.10,  scaleY: 0.10},
           { type: "enemy", x: 400, y: groundY - 110},
           { type: "enemy", x: 600, y: groundY - 110},
           { type: "reward", x: 800, y: groundY - 110},
         ],
       },
       {
-        name: "Robot Rampage",
+        name: "Oblivion",
         number: 2,
         speed: -3,
         gameItems: [

@@ -19,27 +19,23 @@ var runLevels = function (window) {
     // TODOs 5 through 11 go here
     // BEGIN EDITING YOUR CODE HERE
     
-    function createObstacle(x, y, damage, rotation){
-    var hitZoneSize = 25; // how big the hit zone is
+    function createObstacle(x, y, damage, rotation, hitZone, image, offsetX, offsetY, scaleX, scaleY){
+    var hitZoneSize = hitZone; // how big the hit zone is
     var damageFromObstacle = damage; // how much dmange the saw does
     var obstacleHitZone = game.createObstacle(hitZoneSize, damageFromObstacle); // creates it, stores the damage
     obstacleHitZone.x = x; // saws x position
     obstacleHitZone.y = y; // saws y position
     game.addGameItem(obstacleHitZone); // adds the obstcal to the game
-    var obstacleImage = draw.bitmap("img/Spike.png"); // draws it and stores it to obstacle image
+    var obstacleImage = draw.bitmap("img/mudcrab.png"); // draws it and stores it to obstacle image
     obstacleHitZone.addChild(obstacleImage); // takes the saw blade puicture and adds it as a child to the hit zone
     obstacleImage.x = -25; // the abstical images x
     obstacleImage.y = -25; // the abstical images y
-    obstacleImage.scaleX = 0.05;
-    obstacleImage.scaleY = 0.05;
+    obstacleImage.scaleX = 0.10;
+    obstacleImage.scaleY = 0.10;
 
     obstacleHitZone.rotationalVelocity = rotation;
 
     }
-
-    createObstacle(400, groundY - 110, 10);
-    createObstacle(600, groundY - 110, 20);
-    createObstacle(800, groundY - 110, 30);
 
     function createReward(x, y){
       var reward = game.createGameItem("reward", 25); // giving the type reward and giving it a hit zone of 25 and storing it in the reward variable
@@ -131,7 +127,7 @@ var runLevels = function (window) {
         var element = levelObjects[i];
 
         if(element.type === "obstacle"){
-          createObstacle(element.x, element.y, element.damage, element.rotation);
+          createObstacle(element.x, element.y, element.damage, element.rotation, element.hitZone, element.image, element.offsetX, element.offsetY, element.scaleX, element.scaleY);
         }
         if(element.type === "enemy"){
           createEnemy(element.x, element.y);
