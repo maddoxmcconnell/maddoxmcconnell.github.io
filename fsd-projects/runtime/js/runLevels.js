@@ -64,7 +64,7 @@ var runLevels = function (window) {
     createReward(1200, groundY - 400);
     createReward(800, groundY - 400);
 
-      function createEnemy(x, y){
+      function createEnemy(x, y, damage, rotation, hitZone, image, offsetX, offsetY, scaleX, scaleY){
       var enemy = game.createGameItem("enemy", 25); // giving the type enemy and giving it a hit zone of 25 and storing it in the enemy variable
       var enemyImage = draw.bitmap("img/Kwama_species (1).png"); // draws the image
       enemyImage.x = -25; // image x offset right
