@@ -15,15 +15,16 @@ var makeLevelData = function (window) {
         number: 1,
         speed: -3,
         gameItems: [
-          { type: "obstacle", x: 600, y: groundY - 20, damage: 10, hitZone: 20, image: "img/mudcrab.png", offsetX: -35, offsetY: -25, scaleX: 0.08, scaleY: 0.08, speed: -2, rotation: 0 },
-          { type: "obstacle", x: 900, y: groundY - 20, damage: 10, hitZone: 20, image: "img/mudcrab.png", offsetX: -60, offsetY: -50, scaleX: 0.2, scaleY: 0.2, speed: -2, rotation: 0 },
-          { type: "obstacle", x: 1200, y: groundY - 20, damage : 10, hitZone: 20, image: "img/mudcrab.png", offsetX: -60, offsetY: -50, scaleX: 0.2, scaleY: 0.2, speed: -2, rotation: 0 },
-          { type: "enemy", x: 800, y: groundY - 50, damage: 10, score: 100, hitZone: 25, image: "img/Kwama_species (1).png", offsetX: -50, offsetY: -80, scaleX: 0.25, scaleY: 0.25, speed: 2 },
-          { type: "enemy", x: 1700, y: groundY - 50, damage: 10, score: 100, hitZone: 25, image: "img/Kwama_species (1).png", offsetX: -50, offsetY: -80, scaleX: 0.25, scaleY: 0.25, speed: 2 },
+          { type: "obstacle", x: 600, y: groundY - 20, damage: 10, hitZone: 20, image: "img/mudcrab.png", offsetX: -35, offsetY: -25, scaleX: 0.08, scaleY: 0.08, speed: -2},
+          { type: "obstacle", x: 1100, y: groundY - 20, damage: 10, hitZone: 20, image: "img/mudcrab.png", offsetX: -37, offsetY: -25, scaleX: 0.08, scaleY: 0.08, speed: -2},
+          { type: "obstacle", x: 1600, y: groundY - 20, damage : 10, hitZone: 20, image: "img/mudcrab.png", offsetX: -38, offsetY: -25, scaleX: 0.08, scaleY: 0.08, speed: -2},
+          { type: "enemy", x: 800, y: groundY - 20, damage: 10, score: 100, hitZone: 30, image: "img/Kwama_species (1).png", offsetX: -35, offsetY: -5, scaleX: 0.2, scaleY: 0.2, speed: 2 },
+          { type: "enemy", x: 1700, y: groundY - 20, damage: 10, score: 100, hitZone: 30, image: "img/Kwama_species (1).png", offsetX: -35, offsetY: -5, scaleX: 0.2, scaleY: 0.2, speed: 2 },
+          { type: "enemy", x: 2300, y: groundY - 450, damage: 10, score: 100, hitZone: 30, image: "img/images (4).png", offsetX: -35, offsetY: -5, scaleX: 2, scaleY: 2, speed: 2 },
           { type: "reward", x: 1000, y: groundY - 90, hitZone: 25, image: "img/healpotion.png", offsetX: -35, offsetY: -35, scaleX: 0.15, scaleY: 0.15, score: 200, health: 5 },
           { type: "reward", x: 1300, y: groundY - 90, hitZone: 25, image: "img/healpotion.png", offsetX: -35, offsetY: -35, scaleX: 0.15, scaleY: 0.15, score: 200, health: 5 },
           { type: "reward", x: 1500, y: groundY - 140, score: 200, health: 5, hitZone: 25, image: "img/healpotion.png", offsetX: -35, offsetY: -35, scaleX: 0.15, scaleY: 0.15 },
-          { type: "levelmarker", x: 1900, y: groundY - 75, health: 100, hitZone: 25, image: "img/Morrowinddoor.png", offsetX: -110, offsetY: -110, scaleX: 0.6, scaleY: 0.6, speed: 2},
+          { type: "levelmarker", x: 3000, y: groundY - 75, health: 100, hitZone: 25, image: "img/Morrowinddoor.png", offsetX: -110, offsetY: -110, scaleX: 0.6, scaleY: 0.6, speed: 2},
         ]
       },
       {

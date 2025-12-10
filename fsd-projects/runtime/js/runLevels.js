@@ -18,7 +18,7 @@ var runLevels = function (window) {
 
     // TODOs 5 through 11 go here
     // BEGIN EDITING YOUR CODE HERE
-    function createObstacle(x, y, damage, hitZone, image, offsetX, offsetY, scaleX, scaleY, speed, rotation){
+    function createObstacle(x, y, damage, hitZone, image, offsetX, offsetY, scaleX, scaleY, speed){
       var hitZoneSize = hitZone; //sets the size of the obstacle's collision area
       var damageFromObstacle = damage; //sets the obstacles damage
       var obstacleHitZone = game.createObstacle(hitZoneSize, damageFromObstacle); //creates the obstacle hitzone with the size and damage attatched to it
@@ -33,7 +33,7 @@ var runLevels = function (window) {
       obstacleImage.scaleY = scaleY;
       obstacleHitZone.velocityX = speed
 
-      obstacleHitZone.rotationalVelocity = rotation;
+      // obstacleHitZone.rotationalVelocity = rotation;
     }
     
     function createEnemy(x, y, damage, score, hitZone, image, offsetX, offsetY, scaleX, scaleY, speed){
