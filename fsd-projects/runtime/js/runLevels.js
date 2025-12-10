@@ -36,7 +36,7 @@ var runLevels = function (window) {
       // obstacleHitZone.rotationalVelocity = rotation;
     }
     
-    function createEnemy(x, y, damage, score, hitZone, image, offsetX, offsetY, scaleX, scaleY, speed){
+    function createEnemy(x, y, damage, score, hitZone, image, offsetX, offsetY, scaleX, scaleY, speed, health){
       var enemy = game.createGameItem("enemy", hitZone); //creates an item with type "enemy" and a hitzone of 25, and stores that in the enemy variable
       var enemyImage = draw.bitmap(image); //draws a rectangle with a width and height of 50 and and the color red, and stores that in the enemyImage variable
       enemyImage.x = offsetX; //image x offset
@@ -59,6 +59,7 @@ var runLevels = function (window) {
       enemy.onProjectileCollision = function(){
         game.increaseScore(score) //increase score by 100
         enemy.fadeOut() //enemy fade out animation
+        
       };
     }
 
