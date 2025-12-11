@@ -44,11 +44,11 @@ var background = function (window) {
             //background.addChild(backgroundFill); //adds the background fill to the background object
 
             //if (currentLevel === 0){
-                var backgroundImage = draw.bitmap("img/hills.webp");
+                var backgroundImage = draw.bitmap("img/Morrowindbg.jpg");
                 backgroundImage.x = 0;
                 backgroundImage.y = 0;
-                backgroundImage.scaleX = 3.2;
-                backgroundImage.scaleY = 1.52;            
+                backgroundImage.scaleX = 1.;
+                backgroundImage.scaleY = 1.45;            
                 background.addChild(backgroundImage);
             /*} else if (currentLevel === 1){
                 backgroundImage = draw.bitmap("img/castlewalls.jpg");
