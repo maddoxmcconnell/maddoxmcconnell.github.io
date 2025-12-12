@@ -27,16 +27,16 @@ var makeLevelData = function (window) {
         ]
       },
       {
-        name: "Oblivion",
+        name: "Skyrim",
         number: 2,
         speed: -3,
         gameItems: [
-          { type: "obstacle", x: 300, y: groundY - 20, damage: 10, hitZone: 20, image: "img/Chaurus.webp", offsetX: -35, offsetY: -5, scaleX: 0.1, scaleY: 0.1, speed: -2},
-          { type: "obstacle", x: 800, y: groundY - 20, damage: 10, hitZone: 20, image: "img/Chaurus.webp", offsetX: -35, offsetY: -5, scaleX: 0.1, scaleY: 0.1, speed: -2},
-          { type: "obstacle", x: 1300, y: groundY - 20, damage : 10, hitZone: 20, image: "img/Chaurus.webp", offsetX: -35, offsetY: -5, scaleX: 0.1, scaleY: 0.1, speed: -2},
-          { type: "enemy", x: 500, y: groundY - 130, damage: 20, score: 100, hitZone: 40, image: "img/Chaurus.webp", offsetX: -35, offsetY: -5, scaleX: 0.1, scaleY: 0.1, speed: 2 },
-          { type: "enemy", x: 1000, y: groundY - 130, damage: 20, score: 100, hitZone: 40, image: "img/Chaurus.webp", offsetX: -35, offsetY: -5, scaleX: 0.1, scaleY: 0.1, speed: 2 },
-          { type: "enemy", x: 1600, y: groundY - 20, damage: 50, score: 1000, hitZone: 50, image: "img/SkyrimdragonPNG.png", offsetX: -250, offsetY: -320, scaleX: 0.5, scaleY: 0.5, speed: 2 },
+          { type: "obstacle", x: 500, y: groundY - 130, damage: 10, hitZone: 40, image: "img/Chaurus.webp", offsetX: -35, offsetY: -25, scaleX: 0.1, scaleY: 0.1, speed: -2},
+          { type: "obstacle", x: 1000, y: groundY - 130, damage: 10, hitZone: 40, image: "img/Chaurus.webp", offsetX: -35, offsetY: -25, scaleX: 0.1, scaleY: 0.1, speed: -2},
+          { type: "obstacle", x: 1600, y: groundY - 130, damage : 10, hitZone: 40, image: "img/Chaurus.webp", offsetX: -35, offsetY: -25, scaleX: 0.1, scaleY: 0.1, speed: -2},
+          { type: "enemy", x: 300, y: groundY - 130, damage: 20, score: 100, hitZone: 40, image: "img/dragur.png", offsetX: -35, offsetY: -5, scaleX: 0.35, scaleY: 0.35, speed: 2 },
+          { type: "enemy", x: 800, y: groundY - 130, damage: 20, score: 100, hitZone: 40, image: "img/dragur.png", offsetX: -35, offsetY: -5, scaleX: 0.1, scaleY: 0.1, speed: 2 },
+          { type: "enemy", x: 1300, y: groundY - 20, damage: 50, score: 1000, hitZone: 50, image: "img/SkyrimdragonPNG.png", offsetX: -250, offsetY: -320, scaleX: 0.5, scaleY: 0.5, speed: 2 },
           { type: "reward", x: 650, y: groundY - 90, hitZone: 25, image: "img/healpotion.png", offsetX: -35, offsetY: -35, scaleX: 0.15, scaleY: 0.15, score: 200, health: 5 },
           { type: "reward", x: 1150, y: groundY - 90, hitZone: 25, image: "img/healpotion.png", offsetX: -35, offsetY: -35, scaleX: 0.15, scaleY: 0.15, score: 200, health: 5 },
           { type: "levelmarker", x: 2000, y: groundY - 75, health: 100, hitZone: 25, image: "img/Morrowinddoor-removebg-preview.png", offsetX: -110, offsetY: -160, scaleX: 0.6, scaleY: 0.6, speed: 2},
